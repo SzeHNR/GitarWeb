@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-right">
+  <!-- kép helye -->
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#tortenet">Története</a>
+    <a class="navbar-brand" href="#felepites">Felépítése</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#fej">Fej</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#nyak">Nyak</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#test">Test</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+
+<div class="container tartalom">
+  <div class="row">
+    <div class="col-sm-6">
+      <h2 id="tortenet">Történet</h2>
+      <p>A gitár (nemzetközi szó a spanyol guitarra-ból, ez pedig – arab közvetítéssel – a görög kitharából) a húros hangszerek, ezen belül a pengetős hangszerek csoportjába tartozó hangszer. Megszólaltatása pengetővel, illetve ujjal történik. Általában hat húrja van. *A gitár kivitele szerint lehet klasszikus, akusztikus, elektromos vagy elektro-akusztikus. A gitár napjainkra hihetetlen népszerűségre tett szert. Szinte minden zenei stílusban képviselteti magát valamilyen formában. Ez leginkább sokoldalúságának köszönhető, hiszen az egyes gitárok típusuktól és zenei stílustól függően betölthetnek szólista szerepet, de megállják helyüket a ritmusszekcióban is. Gitáron éppúgy előadhatók klasszikus darabok, mint napjaink modern popzenéi, sőt a rock például elképzelhetetlen lenne e hangszer nélkül.</p>
+      <img id="tipusKep" src="img/akusztikus.jpg" class="img-fluid mx-auto d-block" alt="Akusztikus gitár" title="Akusztikus gitár">
+      <p>Néhány népszerű típusa:</p>
+      <ol>
+        <li onclick="kepcsere('akusztikus');">Akusztikus gitár</li>
+        <li onclick="kepcsere('elektromos');">Elektromos gitár</li>
+        <li onclick="kepcsere('akusztikus_basszus');">Akusztikus basszusgitár</li>
+        <li onclick="kepcsere('elektromos_basszus');">Elektromos basszusgitár</li>        
+      </ol>
+      <p>A szó szoros értelmében vett gitárok valamikor a 15. század után jelentek meg, de természetesen jóval korábban – már az ókorban is – léteztek a gitárhoz hasonló, vagy arra emlékeztető húros, pengetős hangszerek. A zavaros hangszerelnevezések és hiányos történelmi adatok azonban nehezítik az ennél régebbi ismeretek rendszerezését. A legrégebbi fennmaradt gitár egy 1590 tájáról származó öt hangra hangolt, hangonként dupla húrozással ellátott hangszer.</p>
+      <img src="img/kronika.jpg" class="img-fluid mx-auto d-block w-75 " alt="Régi ábrázolás" title="Régi ábrázolás">
+      <h2 id="hangja">Hangja</h2>
+      <audio controls>
+        <source src="Classical_guitar_scale.ogg" type="audio/ogg">
+      A böngésződ nem támogatja ezt az audió elemet!
+      </audio>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-6">
+      <h2 id="felepites">Felépítés</h2>
+      <p>Sokféle formájú, húrozású, működési elvű gitár létezik, de változatosságuk ellenére bizonyos vonásaikban megegyeznek. A gitár minden esetben rendelkezik egy hangszertesttel, valamint egy ebből kiinduló nyakkal aminek végén a hangszer feje található a hangolókulcsokkal.</p>
+
+      <button type="button" class="btn" data-toggle="modal" data-target="#nagyKep">
+        <img src="img/gitar_reszek.jpg" class="img-fluid mx-auto d-block w-75" title="Egy klasszikus és egy elektromos gitár részei">
+      </button>
+      
+      <h3>Fej</h3>
+        <p>A gitár feje a nyak végén található, a hangolókulcsoknak és a húrvezető nyeregnek ad helyet. A húrok a nyergen áthaladva csavarodnak rá a kulcsokra, melyek segítségével szabályozható az egyes húrok feszessége, így a megpengetett hang magassága. A hangolókulcsok elrendezését illetően beszélhetünk szimmetrikus, és aszimmetrikus elrendezésről, az általános elrendezés a 3+3-as, ahol mindkét oldalon 3-3 kulcs található.</p>
+      <h3>Nyak</h3>
+        <p>A gitár nyakának hangszerjátékos szempontjából legfontosabb funkciója, hogy rajta található a fogólap, aminek segítségével az egyes hangok megszólaltathatóak.</p>
+        <p>Gitárnyak készítésére olyan faanyagot használnak, melynek jó a használat közbeni stabilitása, tehát sem a húrok feszítőereje, sem az idő múlása, az anyag öregedése, a klimatikus változások nem okoznak benne maradandó alakváltozást. Legalkalmasabb anyagok a cedrela, a mahagónifélék, a jávorfa.</p>
+        <p>A gitár húrjainak feszítettsége miatt a viszonylag vékony és hosszú nyak komoly statikai igénybevételnek van kitéve. A klasszikus gitár húrjai kb. 40 kilogramm súlynak megfelelő, a fémhúros gitároké majdnem kétszer ennyi terhelést képviselnek. Ez az erő a nyakat arra készteti, hogy íjszerűen meggörbüljön. A klasszikus gitár nyaka viszonylag vastag, a műanyag húrok húzóereje kisebb, így rendszerint a faanyag önmagában, megerősítés nélkül képes ezt az igénybevételt elviselni. Ezzel szemben a fémhúros gitárok feszítettsége nagyobb, ugyanakkor hagyományosan szűkebb húrkiosztással, karcsúbb nyakkal készülnek, emiatt a húrok terhelését itt valahogyan ellensúlyozni kell. Erre szolgál a nyakmerevítő pálca, egy enyhén íves fémrúd, mely a hangszer nyakának belsejében fut végig.</p>
+      <h3>Test</h3>
+        <p>A leghagyományosabb gitártest a klasszikus, akusztikus gitárokra jellemző. Ez a rezgőtest, mely a tető-, hát- és az oldallapokból áll össze. Az ezeken a felületeken, elsősorban a tetőn létrejövő hajlítási hullámok sugározzák a térbe a gitár hangját. Belső térfogata üregrezonátorként működik, melynek nyílását a tetőn lévő kerek hanglyuk alkotja, ez szintén részt vesz a gitárhang megformálásában.</p>
+        <p>Egy másik megoldás fémből készült rezonátor alkalmazása, amely a nevét viselő rezonátoros gitároknál használatos. A lényege, hogy a húrok egy vagy több, fémből készült tányért hoznak rezgésbe, melyek rendkívül érdekes, fémes hangszínt adnak a hangszernek.</p>
+        <p>Az elektromos hangszedővel ellátott gitárok teste lehet tömör (solidbody) vagy féltömör (semi-solidbody).</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="nagyKep">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Egy klasszikus és egy elektromos gitár részei</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <img src="img/gitar_reszek.jpg" class="img-fluid" alt="Egy klasszikus és egy elektromos gitár részei" title="Egy klasszikus és egy elektromos gitár részei">
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Bezárás</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
