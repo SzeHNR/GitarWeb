@@ -1,47 +1,52 @@
-.fej{
+.fej {
     margin-bottom: 0;
-    background-image: url('../img/fej_hatter.png');    
+    background-image: url('../img/fej_hatter.png');
     background-size: 22px 125px;
     background-position-x: right;
     background-position-y: center;
     background-repeat: repeat-x;
-}
-.fej img{
-    height: 25%;
+    padding: 0;
 }
 
-.tartalom{
-    margin-top:30px;
+.fej img {
+    height: 125px;
 }
 
-.button{
+.tartalom {
+    margin-top: 30px;
+}
+
+.button {
     margin: 0;
     background-image: url('../img/nagyit.png');
     background-repeat: no-repeat;
 }
 
-.modal-body{
+.modal-body {
     overflow: hidden;
     margin: 10px;
 }
 
-.modal-body img{
+.modal-body img {
     transform: scale(1.2) translate(4%, 0%);
 }
 
-h3{
+h3 {
     margin-top: 25px;
 }
 
-#tipusKep{
+#tipusKep {
     max-height: 600px;
     margin-bottom: 15px;
 }
 
-#tipusKepek li{
+#tipusKepek li {
     list-style-type: square;
+    cursor: pointer;
+
 }
 
-#tipusKepek li:hover{
+#tipusKepek li:hover {
     padding-left: 10px;
+    background-color: rgb(241, 241, 241);
 }

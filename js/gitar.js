@@ -1,5 +1,5 @@
-function kepcsere(){
-    document.getElementById('tipusKep').src="img/"+tipus+".png";
+function kepcsere(tipus){
+    document.getElementById('tipusKep').src="img/"+tipus+".jpg";
     if (tipus.includes("_")) {
         document.getElementById('tipusKep').alt=tipus.charAt(0).toUpperCase() + tipus.slice(1).replace('_',' ') + "gitár";
     } else {
